@@ -32,7 +32,15 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_DEFAULT_REGION: eu-central-1
         run: |
-          git branch
           # Synchronize site directory with S3 bucket (deletes removed files)
           aws s3 sync site/ s3://n8n-docs-docspace --delete
+          
+      - name: Invalidate CloudFront
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: eu-central-1
+        run: |
+          # Invalidate CloudFront distribution to refresh cached content
+          aws cloudfront create-invalidation --distribution-id E315E2POF34QA5 --paths "/*"
           
