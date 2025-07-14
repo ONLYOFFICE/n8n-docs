@@ -7,7 +7,7 @@ contentType: [integration, reference]
 
 # ONLYOFFICE DocSpace node
 
-Use the ONLYOFFICE DocSpace node to automate work in ONLYOFFICE DocSpace, and and integrate ONLYOFFICE DocSpace with other applications. n8n has built-in support for a wide range of ONLYOFFICE DocSpace features, including creating, updating, listing, deleting, and getting files, folders, rooms, and users.
+Use the ONLYOFFICE DocSpace node to automate work in ONLYOFFICE DocSpace, and integrate ONLYOFFICE DocSpace with other applications. n8n has built-in support for a wide range of ONLYOFFICE DocSpace features, including creating, updating, listing, deleting, and getting files, folders, rooms, and users.
 
 On this page, you'll find a list of operations the ONLYOFFICE DocSpace node supports and links to more resources.
 
@@ -55,3 +55,5 @@ Refer to [ONLYOFFICE DocSpace credentials](/integrations/builtin/credentials/onl
     * [**Invite a user**](/integrations/builtin/app-nodes/n8n-nodes-base.onlyoffice/user-operations.md#invite-a-user)
     * [**Search for a user**](/integrations/builtin/app-nodes/n8n-nodes-base.onlyoffice/user-operations.md#search-for-a-user)
     * [**Update a user**](/integrations/builtin/app-nodes/n8n-nodes-base.onlyoffice/user-operations.md#update-a-user)
+
+--8<-- "_snippets/integrations/builtin/app-nodes/operation-not-supported.md"
